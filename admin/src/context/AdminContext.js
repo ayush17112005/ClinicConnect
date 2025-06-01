@@ -9,7 +9,7 @@ const AdminContextProvider = (props) => {
   );
   const [doctors, setDoctors] = useState([]);
   const [appointments, setAppointments] = useState([]);
-  const backendUrl = process.env.REACT_APP_BACKEND_URL;
+  const backendUrl = "https://clinicconnect-ynhv.onrender.com";
 
   const [dashData, setDashData] = useState(false);
 
