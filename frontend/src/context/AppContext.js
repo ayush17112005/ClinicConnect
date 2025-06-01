@@ -8,7 +8,7 @@ export const AppContext = createContext();
 const AppContextProvider = ({ children }) => {
   const [doctors, setDoctors] = useState([]);
   const currencySymbol = "$";
-  const backendUrl = process.env.REACT_APP_BACKEND_URL;
+  const backendUrl = "https://clinicconnect-ynhv.onrender.com";
   const [token, setToken] = useState(
     localStorage.getItem("token") ? localStorage.getItem("token") : ""
   );
