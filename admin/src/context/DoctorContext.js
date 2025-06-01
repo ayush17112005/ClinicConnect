@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 export const DoctorContext = createContext();
 
 const DoctorContextProvider = (props) => {
-  const backendUrl = process.env.REACT_APP_BACKEND_URL;
+  const backendUrl = "https://clinicconnect-ynhv.onrender.com";
   const [dToken, setDToken] = useState(
     localStorage.getItem("dToken") ? localStorage.getItem("dToken") : ""
   );
