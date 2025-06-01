@@ -15,7 +15,11 @@ connectDB();
 connectCloudinary();
 
 //middlewares
-app.use(cors());
+app.use(cors({
+  origin: "https://clinicconnect-frontend.onrender.com",
+  credentials: true
+}));
+
 app.use(express.json());
 
 //Api endpoints
