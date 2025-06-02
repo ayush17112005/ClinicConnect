@@ -16,7 +16,10 @@ connectCloudinary();
 
 //middlewares
 app.use(cors({
-  origin: "https://clinicconnect-frontend.onrender.com",
+  origin: [
+    "https://clinicconnect-frontend.onrender.com",
+    "https://clinicconnect-admin.onrender.com"
+  ],
   credentials: true
 }));
 
